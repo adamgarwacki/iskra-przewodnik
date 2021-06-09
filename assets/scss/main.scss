@@ -1,0 +1,12 @@
+$primary-color: #fff;
+$secondary-color: #292929;
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    color: $primary-color;
+    background-color: $secondary-color;
+}
