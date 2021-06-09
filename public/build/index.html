@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,54 @@
 
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <h1>Hello World!</h1>
+
+    <!-- SIDEBAR -->
+
+    <div class="sidebar">
+        <div class="menu-icon" id="menu-icon" onclick="toggleMenu()">
+            <svg viewBox="0 0 150 150">
+                <path
+                    d="m39.2 54.2c0 0 4-5.6 3.8-8.8-0.4-5.4-8.7-13.9-8.7-13.9 0 0 8.4 8.3 13.9 8.7 3.2 0.2 8.8-3.8 8.8-3.8 0 0-4.2 5.2-4.3 8.3-0.1 3.6 4.7 9.9 4.7 9.9 0 0-6.2-4.7-9.9-4.7-3.1 0.1-8.3 4.3-8.3 4.3zm17.8 58.9c0 0-5.6-4-8.8-3.8-5.4 0.4-13.9 8.7-13.9 8.7 0 0 8.3-8.4 8.7-13.9 0.2-3.2-3.8-8.8-3.8-8.8 0 0 5.2 4.2 8.3 4.3 3.6 0.1 9.9-4.7 9.9-4.7 0 0-4.7 6.2-4.7 9.9 0.1 3.1 4.3 8.3 4.3 8.3zM115 95.4c0 0-4 5.6-3.8 8.8 0.4 5.4 8.7 13.9 8.7 13.9 0 0-8.4-8.3-13.9-8.7-3.2-0.2-8.8 3.8-8.8 3.8 0 0 4.2-5.2 4.3-8.3 0.1-3.6-4.7-9.9-4.7-9.9 0 0 6.2 4.7 9.9 4.7 3.1-0.1 8.3-4.3 8.3-4.3zM97.2 36.5c0 0 5.6 4 8.8 3.8 5.4-0.4 13.9-8.7 13.9-8.7 0 0-8.3 8.4-8.7 13.9-0.2 3.2 3.8 8.8 3.8 8.8 0 0-5.2-4.2-8.3-4.3-3.6-0.1-9.9 4.7-9.9 4.7 0 0 4.7-6.2 4.7-9.9-0.1-3.1-4.3-8.3-4.3-8.3zM76.9 14.5c0 0 4.9 32.1 15.5 43 10.9 11.2 43.7 17 43.7 17 0 0-32.8 6.7-43.7 18-10.4 10.7-15.5 42-15.5 42 0 0-6.1-31.2-16.6-42C49.5 81.5 17.6 74.5 17.6 74.5c0 0 31.9-6.1 42.6-17C71.1 46.6 76.9 14.5 76.9 14.5Z" />
+            </svg>
+        </div>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+
+    <div class="main-content">
+
+        <!-- 
+            Początkowo rozważałem użycie tagów heading, article i tym podobnych, 
+            ale uznałem, że nie będą spójne z planowanymi stronami
+         -->
+
+        <div class="heading-main">
+            <h1 class="header-main">Iskra</h1>
+            <h2 class="header-sub">Przewodnik po grze fabularnej</h2>
+        </div>
+
+        <div class="introduction">
+            <h2 class="header-sub">O Iskrze</h2>
+            <p class="text-content">Iskra jest grą fabularną - grą, w której jeden z uczestników pełni rolę narratora opowieści, a pozostali wcielają się w stworzone przez siebie postaci należące do świata, o którym opowiada narrator. Rolą narratora - nazywanego Mistrzem Gry - jest opisanie (przeważnie słowne) sytuacji, w której znajdują się postaci kontrolowane przez Graczy, którzy z kolei również słownie reagują na opisane wydarzenie.</p>
+
+            <h2 class="header-sub">O świecie</h2>
+            <p class="text-content">W świecie Iskry magia nie jest rozpowszechniona. Większość mieszkańców tego świata nigdy nie widziało jej na własne oczy. Uznawana jest przeważnie jako narzędzie w rękach Plagi - starożytnego zła, mającego opętać cały świat i doprowadzić do jego zagłady. Istniejejednak niewielu odważnych, żądnych wiedzy śmiałków, którzy gotowi są odkrywać jej tajemnice nawet wobec zagrożenia jakim jest zostanie okrzykniętym heretykiem i osądzonym w brutalny sposób.</p>
+
+            <h2 class="header-sub">O ludziach</h2>
+            <p class="text-content">Postaci kierowane przez Graczy w świecie Iskry zaczynają przeważnie jako zwykli ludzie o zwykłych doświadczeniach, zwykłych marzeniach i zwykłych umiejętnościach. W pewnym momencie ich życia wydarza się coś, co pcha ich ku niezwykłym przygodom, niebezpieczeństwom i tajemnicom, które skrywa szeroki świat.</p>
+            <p class="text-content">Świat Iskry zamieszkuje wiele niezywkłych istot. Współistniejący z Ludźmi Pitóg, ledwo sięgający im do kolan lecz obdarzeni małymi skrzydłami, tajemniczy, wrażliwi na magię Hored o spiczastych uszach, wygnani i krążący w poszukiwaniu celu Satszechszuch, o skórze ciemnej niczym obsydian i równie twardej.</p>
+        </div>
+
+        <div class="basic-rules">
+            <h2 class="header-sub"></h2>
+        </div>
+
+    </div>
 
     <script src="./js/bundle.js"></script>
 </body>
+
 </html>

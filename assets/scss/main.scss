@@ -1,12 +1,77 @@
-$primary-color: #fff;
-$secondary-color: #292929;
+@use 'base' as *;
 
 * {
     margin: 0px;
     padding: 0px;
+
+    font-family: $primary-font;
 }
 
 body {
     color: $primary-color;
     background-color: $secondary-color;
+}
+
+
+// SIDEBAR
+
+.sidebar {
+    position: fixed;
+    box-sizing: border-box;
+    left: 0px;
+    top: 0px;
+    height: 100vh;
+    width: 108px;
+    padding: 4px;
+
+    background-color: $secondary-color;
+    border-right: 1px solid $primary-color;
+}
+
+.menu-icon {
+    width: 100px;
+    height: 100px;
+
+    stroke: $primary-color;
+    stroke-width: 3;
+    fill: none;
+}
+
+.menu-icon svg {
+    transition: all 0.2s;
+
+    &:hover {
+        filter: drop-shadow(0px 0px 1px #fff);
+    }
+}
+
+
+// MAIN CONTENT
+
+.main-content {
+    width: 90%;
+    margin-left: 108px;
+    
+    &>* {
+        margin: 4px;
+        margin-bottom: 24px;
+        width: 90%;
+        border-bottom: 1px solid $primary-color;
+    }
+}
+
+.text-content {
+    line-height: 1.5em;
+    text-align: justify;
+    font-family: $secondary-font;
+}
+
+.header-sub, .text-content {
+    margin-bottom: 12px
+}
+
+.heading-main {
+    height: 100px;
+
+    font-size: 1.3em;
 }
