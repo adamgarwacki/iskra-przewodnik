@@ -8,14 +8,14 @@ const { assert } = require('console');
 gulp.task('pack-js', function () {    
     return gulp.src('assets/js/*.js')
         .pipe(concat('bundle.js'))
-        .pipe(gulp.dest('./public/build/js'));
+        .pipe(gulp.dest('./build/js'));
 });
 
 gulp.task ('sass', function () {
     return gulp.src('./assets/scss/*.scss')
         .pipe(sass())
         .pipe(concat('style.css'))
-        .pipe(gulp.dest('./public/build/css/'))
+        .pipe(gulp.dest('./build/css/'))
 });
 
 gulp.task('watch', function () {
