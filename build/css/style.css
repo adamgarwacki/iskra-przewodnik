@@ -1,6 +1,7 @@
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
   font-family: "Arial", sans-serif;
 }
 
@@ -9,30 +10,48 @@ body {
   background-color: #292929;
 }
 
+.sidebar, .main-content {
+  padding: 4px;
+}
+
 .sidebar {
   position: fixed;
-  box-sizing: border-box;
   left: 0px;
   top: 0px;
   height: 100vh;
   width: 108px;
-  padding: 4px;
   background-color: #292929;
   border-right: 1px solid #e0e0e0;
 }
-
-.menu-icon {
+.sidebar > * {
   width: 100px;
   height: 100px;
+}
+
+.icon {
   stroke: #e0e0e0;
   stroke-width: 3;
   fill: none;
 }
-
-.menu-icon svg {
+.icon svg {
   transition: all 0.2s;
 }
-.menu-icon svg:hover {
+.icon svg:hover {
+  filter: drop-shadow(0px 0px 1px #fff);
+}
+
+.github-link {
+  position: absolute;
+  bottom: 0px;
+}
+.github-link a {
+  display: block;
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 100px;
+  color: #e0e0e0;
+}
+.github-link a:hover {
   filter: drop-shadow(0px 0px 1px #fff);
 }
 
@@ -41,10 +60,13 @@ body {
   margin-left: 108px;
 }
 .main-content > * {
-  margin: 4px;
   margin-bottom: 24px;
   width: 90%;
   border-bottom: 1px solid #e0e0e0;
+}
+
+.header-sub, .text-content {
+  margin-bottom: 12px;
 }
 
 .text-content {
@@ -52,9 +74,8 @@ body {
   text-align: justify;
   font-family: "Times New Roman", sans-serif;
 }
-
-.header-sub, .text-content {
-  margin-bottom: 12px;
+.text-content:nth-child(1) {
+  font-size: 2em;
 }
 
 .heading-main {

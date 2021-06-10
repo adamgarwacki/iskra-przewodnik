@@ -1,18 +1,14 @@
-Iskra - Przewodnik
+<h1>Iskra - Przewodnik</h1>
 
 Wszystko, co może się przydać podczas korzystania z podręcznika gry fabularnej Iskra, od spisu zasad po manadżer postaci.
 Link do zasad ( commenter ): https://docs.google.com/document/d/1zO55e7EETfcFPtoB5b1giSAbKwl2naWEa_bKE32MO2Q/edit?usp=sharing
 
 Feedback można przesyłać na:
 e-mail: adamgarwacki.work@gmail.com
-discord: Adam Garwacki#9503
+discord: adamgarwacki#9503
 
 
-W planach ( + pomysły ):
-
-Podstawowa struktura:
- - po lewej pasek, ten sam (zbliżony?) na każdej stronie;
- - po prawej właściwa zawartość, inna na każdej stronie
+<h2>W planach ( + pomysły ):</h2>
 
 Podstrony:
  1. index - opis, koncepcja, błogosławieństwa od twórcy etc...
