@@ -14,7 +14,7 @@ gulp.task('pack-js', function () {
 gulp.task ('sass', function () {
     return gulp.src('./assets/scss/*.scss')
         .pipe(sass())
-        .pipe(concat('style.css'))
+        // .pipe(concat('style.css')) <-- concatowanie nie ma sensu - sass pozwala mi używać modułów!
         .pipe(gulp.dest('./build/css/'))
 });
 

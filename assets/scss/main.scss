@@ -1,88 +1,8 @@
+// Odnosi się wyłącznie do index.html
+
 @use 'base' as *;
 
-
-* {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-
-    font-family: $primary-font;
-}
-
-body {
-    color: $primary-color;
-    background-color: $secondary-color;
-}
-
-.sidebar, .main-content {
-    padding: 4px;
-}
-
-
-// SIDEBAR
-
-.sidebar {
-    position: fixed;
-    left: 0px;
-    top: 0px;
-    height: 100vh;
-    width: 108px;
-
-    background-color: $secondary-color;
-    border-right: 1px solid $primary-color;
-
-    & > * {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-.icon {
-    stroke: $primary-color;
-    stroke-width: 3;
-    fill: none;
-
-    svg {
-        transition: all 0.2s;
-    
-        &:hover {
-            @include glow;
-        }
-    }
-}
-
-.github-link {
-    position: absolute;
-    bottom: 0px;
-
-    a {
-        display: block;
-
-        text-align: center;
-        font-size: 1.2em;
-        line-height: 100px;
-        color: $primary-color;
-
-        &:hover {
-            @include glow;
-        }
-    }
-}
-
-// MAIN CONTENT
-
-.main-content {
-    width: 90%;
-    margin-left: 108px;
-    
-    & > * {
-        margin-bottom: 24px;
-        width: 90%;
-        @include bottom-border;
-    }
-}
-
-.header-sub, .text-content {
+.text-content {
     margin-bottom: 12px
 }
 
@@ -94,10 +14,4 @@ body {
     &:nth-child(1) {
         font-size: 2em;
     }
-}
-
-.heading-main {
-    height: 100px;
-
-    font-size: 1.3em;
 }
