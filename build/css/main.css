@@ -28,28 +28,17 @@ body {
   height: 100px;
 }
 
-.icon {
+.subpage-link {
   stroke: #e0e0e0;
-  stroke-width: 3;
+  stroke-width: 4;
   fill: none;
 }
-.icon svg {
+.subpage-link svg {
   transition: all 0.2s;
 }
-.icon svg:hover {
-  filter: drop-shadow(0px 0px 1px #fff);
-}
-
-.rules-link {
-  stroke: #e0e0e0;
-  stroke-width: 3;
-  fill: none;
-}
-.rules-link svg {
-  transition: all 0.2s;
-}
-.rules-link svg:hover {
-  filter: drop-shadow(0px 0px 1px #fff);
+.subpage-link svg:hover {
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 4px #fff);
 }
 
 .github-link {
@@ -64,7 +53,8 @@ body {
   color: #e0e0e0;
 }
 .github-link a:hover {
-  filter: drop-shadow(0px 0px 1px #fff);
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 4px #fff);
 }
 
 .main-content {
