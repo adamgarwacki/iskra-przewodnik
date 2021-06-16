@@ -8,12 +8,13 @@ $secondary-color: #292929;
 $primary-font: 'Merriweather', serif;
 $secondary-font: 'Times New Roman', sans-serif;
 
+$bottom-border: 1px solid $primary-color;
 
 // MIXINS:
 
-@mixin bottom-border {
-    border-bottom: 1px solid $primary-color;
-}
+// @mixin bottom-border {
+//     border-bottom: 1px solid $primary-color;
+// }
 
 @mixin hover-glow {
     cursor: pointer;
@@ -27,13 +28,26 @@ $secondary-font: 'Times New Roman', sans-serif;
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-
-    font-family: $primary-font;
 }
 
 body {
     color: $primary-color;
     background-color: $secondary-color;
+}
+
+h1, h2 {
+    font-family: $primary-font;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
 }
 
 // sidebar:
@@ -82,7 +96,7 @@ body {
         color: $primary-color;
 
         &:hover {
-            @include hover-glow;
+            border-bottom: $bottom-border;
         }
     }
 }
@@ -92,12 +106,14 @@ body {
     width: 90%;
     margin-left: 108px;
     padding: 4px 12px;
-    
-    & > * {
-        margin-bottom: 24px;
-        width: 90%;
-        @include bottom-border;
-    }
+}
+
+.main-component {
+    margin-bottom: 24px;
+    width: 90%;
+
+    border-bottom: $bottom-border;
+    font-size: 1.1em;
 }
 
 .heading-main {
