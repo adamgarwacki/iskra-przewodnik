@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Template</title>
+    <title>Tworzenie postaci</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -71,52 +71,100 @@
             <h2 class="header-sub">Tworzenie postaci</h2>
         </div>
         
-        <form>
-            <div class="main-component">
-                <h2 class="header-sub">Główne informacje:</h2>
+        <form id="new-char-form">
+            <div class="main-component general-info">
+                <h2 class="header-sub">Główne informacje</h2>
 
-                <input name="char-name" id="char-name" class="form-text-input" type="text" placeholder="Imię">
+                <input name="char-name" id="char-name" class="form-element form-text-input" type="text" placeholder="Imię">
 
-                <input name="char-species" id="char-species" class="form-text-input" type="text" placeholder="Gatunek">
+                <input name="char-species" id="char-species" class="form-element form-text-input" type="text" placeholder="Gatunek">
                 
-                <textarea name="char-concept" id="char-concept" class="form-text-input" placeholder="Koncept"></textarea>
+                <textarea name="char-concept" id="char-concept" class="form-element form-text-input" placeholder="Koncept"></textarea>
             </div>
             
-            <div class="main-component">
-                <h2 class="header-sub">Atrybuty:</h2>
+            <div class="main-component attributes">
+                <h2 class="header-sub">Atrybuty</h2>
 
-                <div class="attributes">
+                <div class="form-element">
                     <fieldset>
-                        <input name="char-str" id="char-str" class="form-number-input" type="number" value="-2">
+                        <input type="number" name="char-str" id="char-str" class="form-number-input attr-input" value="-2" min="-4" max="4">
                         <label for="char-str">Siła</label>
                     </fieldset>
                     
                     <fieldset>
-                        <input name="char-dex" id="char-dex" class="form-number-input" type="number" value="-2">
+                        <input type="number" name="char-dex" id="char-dex" class="form-number-input attr-input" value="-2" min="-4" max="4">
                         <label for="char-dex">Zręczność</label>
                     </fieldset>
                     
                     <fieldset>
-                        <input name="char-con" id="char-con" class="form-number-input" type="number" value="-2">
+                        <input type="number" name="char-con" id="char-con" class="form-number-input attr-input" value="-2" min="-4" max="4">
                         <label for="char-con">Wytrzymałość</label>
                     </fieldset>
     
                     <fieldset>
-                        <input name="char-int" id="char-int" class="form-number-input" type="number" value="-2">
+                        <input type="number" name="char-int" id="char-int" class="form-number-input attr-input" value="-2" min="-4" max="4">
                         <label for="char-int">Intelekt</label>
                     </fieldset>
                     
                     <fieldset>
-                        <input name="char-cha" id="char-cha" class="form-number-input" type="number" value="-2">
+                        <input type="number" name="char-cha" id="char-cha" class="form-number-input attr-input" value="-2" min="-4" max="4">
                         <label for="char-cha">Charyzma</label>
                     </fieldset>
 
                     <div>
-                        <p class="attr-points" id="attr-points">7</p>
+                        <p id="attr-points" class="attr-points">7</p>
                         <p>Punkty do wykorzystania</p>
                     </div>
+                </div> 
+            </div>
+
+            <div class="main-component abilities">
+                <h2 class="header-sub">Zdolności</h2>
+
+                <div class="ability-adder">
+                    <input type="text" name="ability-name" id="ability-name" class="form-element form-text-input" placeholder="Nazwa">
+
+                    <textarea name="ability-desc" id="ability-desc" class="form-element form-text-input" placeholder="Opis"></textarea>
+
+                    <button type="button" id="add-ability" class="form-element btn">Dodaj</button>
                 </div>
+
+                <h3 class="header-sub">Dodane zdolności:</h3>
+                <div id="ability-list" class="form-element ability-list">
+                    brak dodanych zdolności...
+                </div>
+            </div>
             
+            <div class="main-component equipment">
+                <h2 class="header-sub">Ekwipunek</h2>
+
+                <div class="form-elementitem-adder">
+                    <input type="text" name="item-name" id="item-name" class="form-element form-text-input" placeholder="Nazwa">
+
+                    <textarea name="item-desc" id="item-desc" class="form-element form-text-input" placeholder="Opis"></textarea>
+
+                    <div class="form-element">
+                        <label for="item-type">Typ przedmiotu:</label>
+                        <select name="item-type" id="item-type">
+                            <option value="none" selected>Użytkowy</option>
+                            <option value="none" selected>Płaszcz</option>
+                            <option value="none" selected>Ubranie / Pancerz</option>
+                            <option value="none" selected>Broń</option>
+                            <option value="none" selected>Artefakt</option>
+                        </select>
+                    </div>
+
+                    <fieldset id="item-more-info" class="form-element item-more-info hidden">
+
+                    </fieldset>
+
+                    <button type="button" id="add-item" class="form-element btn">Dodaj</button>
+                </div>
+
+                <h3 class="header-sub">Dodane przedmioty:</h3>
+                <div id="equipment-list" class="form-element equipment-list">
+                    brak dodanych przedmiotów...
+                </div>
             </div>
         </form>
     </div>

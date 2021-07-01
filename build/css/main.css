@@ -9,7 +9,7 @@ body {
   background-color: #292929;
 }
 
-h1, h2 {
+h1, h2, h3 {
   font-family: "Merriweather", serif;
 }
 
@@ -17,6 +17,10 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
+}
+
+.hidden {
+  display: none;
 }
 
 /* Firefox */
@@ -76,6 +80,7 @@ input[type=number] {
 
 .main-component {
   margin-bottom: 24px;
+  padding-bottom: 12px;
   width: 90%;
   border-bottom: 1px solid #e0e0e0;
   font-size: 1.1em;
